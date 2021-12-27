@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom';
 import { App } from './App';
 import { NumberProvider } from './providers/number-provider';
 import { BooleanProvider } from './providers/boolean-provider';

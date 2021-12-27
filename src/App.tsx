@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { useString } from "./providers/string-provider";
 import { useNumber } from "./providers/number-provider";
 import { useBoolean } from "./providers/boolean-provider";
