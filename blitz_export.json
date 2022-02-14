@@ -1,4 +1,4 @@
 {
-    "htmlTemplate": "public/index.html",
-    "exportProjectTo": "src"
+  "htmlTemplate": "public/index.html",
+  "exportProjectTo": "src"
 }

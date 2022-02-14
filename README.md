@@ -6,6 +6,10 @@ The working example of [https://github.com/sincovschi/react-flat-providers](http
 
 Inside `src` folder is available for preview the basic usages of Providers offered by package.
 
+[index.tsx](src/index.tsx) - the usage of the `FlatProviders`;
+
+[App.txs](src/App.tsx) - the consumption of providers;
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 const BooleanContext = React.createContext<boolean | undefined>(undefined);
 
@@ -16,5 +16,5 @@ export function BooleanProvider({
 export function useBoolean() {
   const context = React.useContext(BooleanContext);
   if (context !== undefined) return context;
-  throw new Error("useBoolean must be used within a BooleanProvider");
+  throw new Error('useBoolean must be used within a BooleanProvider');
 }

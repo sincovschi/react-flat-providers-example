@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 const NumberContext = React.createContext<number | undefined>(undefined);
 
@@ -9,5 +9,5 @@ export function NumberProvider({ children }: React.PropsWithChildren<unknown>) {
 export function useNumber() {
   const context = React.useContext(NumberContext);
   if (context !== undefined) return context;
-  throw new Error("useNumber must be used within a NumberProvider");
+  throw new Error('useNumber must be used within a NumberProvider');
 }
