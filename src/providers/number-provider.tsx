@@ -2,8 +2,15 @@ import * as React from 'react';
 
 const NumberContext = React.createContext<number | undefined>(undefined);
 
-export function NumberProvider({ children }: React.PropsWithChildren<unknown>) {
-  return <NumberContext.Provider value={1}>{children}</NumberContext.Provider>;
+export function NumberProvider({
+  initialNumber = 0,
+  children,
+}: React.PropsWithChildren<{ initialNumber: number }>) {
+  return (
+    <NumberContext.Provider value={initialNumber}>
+      {children}
+    </NumberContext.Provider>
+  );
 }
 
 export function useNumber() {
